@@ -1,28 +1,32 @@
 <html lang="en">
-	<head>
-		<link rel="stylesheet" href="style.css" />
-		<title>Document</title>
-	</head>
-	<body>
-		<header>
-			<h1>Take Notes and Never Forget</h1>
-			<h2>By Zucho Development</h2>
-			<hr />
-		</header>
-		<br />
-		<section id="user-input">
-			<div id="form-div">
-				<form id="new-note-form">
-					<label for="noteTitleText">Create New Note: </label>
-					<input type="text" name="noteTitleText" id="noteTitleText" /><br />
-					<button type="submit">Enter</button>
-					<button type="reset">Clear</button>
-				</form>
-			</div>
-			<div id="filter-input">
-				<label for="filterText">Filter: </label>
-				<input type="text" id="filterText" />
-			</div>
-		</section>
-	</body>
+
+<head>
+	<link rel="stylesheet" href="style.css" />
+	<title>Notes</title>
+</head>
+
+<body>
+	<header>
+		<h1 id="main-title">Take Notes and Never Forget</h1>
+		<h2>By Zucho Development</h2>
+		<hr />
+	</header>
+	<br />
+	<section id="user-input">
+		<div id="form-div">
+			<form id="new-note-form">
+				<label for="noteTitleText">Create New Note: </label>
+				<input type="text" name="noteTitleText" id="noteTitleText" /><br />
+				<button type="submit">Enter</button>
+				<button type="reset">Clear</button>
+			</form>
+		</div>
+		<div id="filter-input">
+			<label for="filterText">Filter: </label>
+			<input type="text" id="filterText" />
+		</div>
+	</section>
+	<script src="main.js"></script>
+</body>
+
 </html>
