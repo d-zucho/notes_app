@@ -13,6 +13,7 @@ document.querySelector('#new-note-form').addEventListener('submit', function(e) 
 
 	// add note object to notes array
 	notes.push({
+		id: uuidv4(),
 		title: noteTitle,
 		body: '',
 	});
