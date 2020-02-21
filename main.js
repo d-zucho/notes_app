@@ -39,3 +39,10 @@ document.querySelector('#filterText').addEventListener('input', function(e) {
 	filters.filterText = e.target.value;
 	renderNotes(notes, filters);
 });
+
+/**  -- Delete All Notes Button Event Listener */
+document.querySelector('#deleteAll').addEventListener('click', function(e) {
+	localStorage.clear();
+	localStorage.setItem('notes', JSON.parse(notesJSON));
+	renderNotes(notes, filters);
+});

@@ -21,11 +21,18 @@ main {
 #user-input {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: auto auto;
 	text-align: center;
 }
 
 #form-div {
 	grid-column: 1 / span 2;
+}
+
+#deleteAll {
+	grid-row: 2 / 3;
+	grid-column: 2 / 4;
+	justify-self: center;
 }
 
 #filter-input {
